@@ -1,0 +1,4 @@
+<div class="list-view">
+    <app-accordion [faq]= "faq" *ngFor="let faq of faqList" ></app-accordion>
+    <div *ngIf=errorMessage.length>{{errorMessage}}</div>
+</div>

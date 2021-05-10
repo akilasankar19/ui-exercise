@@ -1,0 +1,15 @@
+<div class="accordion-panel">
+    <div (click)="toggleContent()" class="content-title" [style.background-color]="visibleFlag ? 'lightgrey' : 'white'">
+        <div class="content-index">Q{{this.faq.id}}</div>
+        <div class="content-question">{{this.faq.question}}</div>
+        <div class="content-icon">
+            <div class="content-icon-bg">
+                <div [ngClass]="{'rotate-cross': visibleFlag, 'rotate-plus': !visibleFlag}"><img src= "assets/svg/plus-icon.svg" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="content-desc" [style.display]="visibleFlag ? 'block' : 'none'">
+        {{this.faq.answer}}
+    </div>
+    <hr class="line-break" />
+</div>

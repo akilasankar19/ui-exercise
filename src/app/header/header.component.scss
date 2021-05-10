@@ -1,0 +1,32 @@
+.header{
+    font-family: 'oswald bold', sans-serif;
+    .title{
+        .h3{
+            font-size: 24px;
+            color: black;
+        }
+    }
+    .box{
+        height: 1em;
+        width: 70%;
+        color: black;
+        background-color: black;
+        border: none;
+        margin-left: 0%;
+    }
+    @media (max-width: 768px) {
+        .title{
+            .h3{
+                font-size: 26px;
+            }
+        }
+        .box{
+            width: 100%;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .box{
+            width: 80%;
+        }
+    }
+}

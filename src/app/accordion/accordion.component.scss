@@ -1,0 +1,74 @@
+.accordion-panel{
+    margin-top: 1em;
+    .content-title{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        width: 70%;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .line-break{
+        width: 70%;
+        margin-left: 0%;
+        border: 1px solid black;
+    }
+    .content-desc{
+        width: 65%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 3em;
+    }
+    @media (max-width: 768px) {
+        .content-title{
+            width: 100%;
+        }
+        .line-break{
+            width: 100%;
+        }
+        .content-desc{
+            width: 95%;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .content-title{
+            width: 80%;
+        }
+        .line-break{
+            width: 80%;
+        }
+        .content-desc{
+            width: 75%;
+        }
+    }
+    .content-index{
+        width: 10%;
+        padding-left: 0.5em;
+        font-family: 'oswald bold', sans-serif;
+    }
+    .content-question{
+        width: 80%;
+        transition: max-height 0.4s ease-out;
+    }
+    .content-icon{
+        padding-right: 0.5em;
+        padding-left: 0.5em;        
+    }
+    .content-icon-bg{
+        width: 15px;
+        height: 20px;
+        padding: 5px;
+        text-align: right;
+        background-color: #ffcd48;
+    }
+    .rotate-cross{
+        transform: rotate(45deg);
+        transition-duration: 1s;
+    }
+    .rotate-plus{
+        transform: rotate(0deg);
+        transition-duration: 1s;
+    }
+    
+}
